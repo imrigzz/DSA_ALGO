@@ -11,7 +11,7 @@ int binary_search_iterative(vector<int> vec, int x)
 
     while (left <= right)
     {
-        mid = (right - left / 2) + left;
+        mid = ((right - left) / 2) + left;
         if (vec[mid] == x)
         {
             return mid;
@@ -31,8 +31,8 @@ int binary_search_iterative(vector<int> vec, int x)
 int main()
 {
     // your code here
-    vector<int> vec = {10, 10};
-    int x = 10;
+    vector<int> vec = {10, 20, 30, 40, 50, 60};
+    int x = 20;
     cout << binary_search_iterative(vec, x);
     return 0;
 }
