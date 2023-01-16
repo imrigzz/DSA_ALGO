@@ -5,6 +5,10 @@
 
 using namespace std;
 
+// there is theta(log2(N+1)) levels + at each level theta(N) for merge function
+//  Time complexity theta(nlogn)
+// space complexity : theta(N) , because at each level left and right array combined size is N only
+
 void merge_sort(vector<int> &vec, int low, int high)
 {
     if (low >= high)
