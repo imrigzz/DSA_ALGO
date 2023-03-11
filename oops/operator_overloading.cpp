@@ -26,6 +26,11 @@ ostream &operator<<(ostream &COUT, student &s)
     return COUT;
 }
 
+int operator+(student &s1, student &s2)
+{
+    return s1.roll + s2.roll;
+}
+
 int main()
 {
     // your code here:
@@ -33,6 +38,6 @@ int main()
     cout << s1; // operator overloading, printing the object of class
     student s2 = student(2, "diana", 10);
     cout << s2;
-
+    cout << "sum of roll numbers of both: " << s1 + s2;
     return 0;
 }

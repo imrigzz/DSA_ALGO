@@ -29,7 +29,7 @@ void subsequence(string str, string sub)
 int main()
 {
     string str = "goodins";
-    string sub = "ins";
+    string sub = "ois";
     subsequence(str, sub);
     return 0;
 }
